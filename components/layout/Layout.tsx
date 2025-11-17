@@ -39,6 +39,13 @@ function Layout({ children }: LayoutProps) {
         >
           Project
         </button>
+        <button
+          type='button'
+          onClick={() => goTo('/blog')}
+          className={pathname === '/blog' ? 'underline' : ''}
+        >
+          Blog
+        </button>
       </header>
       <main className='flex-1 flex items-center justify-center'>
         {children}

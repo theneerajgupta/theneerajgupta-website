@@ -34,3 +34,11 @@
 }
 
 @import './custom-css.css';
+
+.markdown h1 {
+  @apply text-3xl font-mono font-light uppercase;
+}
+
+.markdown p {
+  @apply font-mono text-red-300;
+}
