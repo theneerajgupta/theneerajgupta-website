@@ -1,13 +1,14 @@
+import { type ReactNode } from 'react';
 import Layout from './Layout';
 
 type LayoutContainerProps = {
-  exampleText: string;
+  children: ReactNode;
 };
 
-const LayoutContainer = ({ exampleText }: LayoutContainerProps) => {
+const LayoutContainer = ({ children }: LayoutContainerProps) => {
   return (
     <Layout>
-      <div>{exampleText}</div>
+      <div>{children}</div>
     </Layout>
   );
 };
