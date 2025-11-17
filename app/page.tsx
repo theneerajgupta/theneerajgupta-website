@@ -1,3 +1,10 @@
+import { TestTheme } from './TestTheme';
+
 export default function Home() {
-  return <div>HomePage</div>;
+  return (
+    <div>
+      HomePage
+      <TestTheme />
+    </div>
+  );
 }
