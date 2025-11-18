@@ -2,7 +2,7 @@
 
 import { type ReactNode } from 'react';
 import { useRouter, usePathname } from 'next/navigation';
-import { TestTheme } from '../../app/TestTheme';
+import { TestTheme } from '../../app/test/TestTheme';
 
 type LayoutProps = {
   children: ReactNode;
@@ -18,39 +18,6 @@ function Layout({ children }: LayoutProps) {
 
   return (
     <div className='min-h-screen flex flex-col'>
-      <header className='navbar flex gap-2 p-4 border-b border-neutral-700 bg-neutral-900'>
-        <button
-          type='button'
-          onClick={() => goTo('/')}
-          className={pathname === '/' ? 'underline' : ''}
-        >
-          Home
-        </button>
-        <button
-          type='button'
-          onClick={() => goTo('/about')}
-          className={pathname === '/about' ? 'underline' : ''}
-        >
-          About
-        </button>
-        <button
-          type='button'
-          onClick={() => goTo('/projects')}
-          className={pathname === '/projects' ? 'underline' : ''}
-        >
-          Project
-        </button>
-        <button
-          type='button'
-          onClick={() => goTo('/blog')}
-          className={pathname === '/blog' ? 'underline' : ''}
-        >
-          Blog
-        </button>
-        <div className='flex flex-1 justify-end'>
-          <TestTheme />
-        </div>
-      </header>
       <main className='flex-1 flex items-center justify-center'>
         {children}
       </main>
