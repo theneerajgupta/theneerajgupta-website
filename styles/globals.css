@@ -1,5 +1,7 @@
 @import 'tailwindcss';
 
+@plugin "daisyui";
+
 /* 
   1) Base theme tokens (light by default)
   These variables are what the whole site should use.
