@@ -1,8 +1,7 @@
 'use client';
 
-import { type ReactNode } from 'react';
+import { useEffect, type ReactNode } from 'react';
 import { useRouter, usePathname } from 'next/navigation';
-import { TestTheme } from '../../app/test/TestTheme';
 
 type LayoutProps = {
   children: ReactNode;
@@ -17,11 +16,9 @@ function Layout({ children }: LayoutProps) {
   };
 
   return (
-    <div className='min-h-screen flex flex-col'>
-      <main className='flex-1 flex items-center justify-center'>
-        {children}
-      </main>
-    </div>
+    <main className='min-h-screen flex flex-col flex-1 items-center justify-center'>
+      {children}
+    </main>
   );
 }
 

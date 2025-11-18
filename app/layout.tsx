@@ -26,7 +26,13 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body>
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider
+          defaultTheme='system'
+          lightTheme='custom-light'
+          darkTheme='custom-dark'
+        >
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

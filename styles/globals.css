@@ -2,45 +2,6 @@
 
 @plugin "daisyui";
 
-/* 
-  1) Base theme tokens (light by default)
-  These variables are what the whole site should use.
-*/
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-
-  --accent: #3b82f6;
-  --accent-foreground: #ffffff;
-
-  --border: #e5e7eb;
-  --muted: #f3f4f6;
-  --muted-foreground: #4b5563;
-}
-
-/*
-  2) Dark theme overrides
-  Applied when <html> has the class "theme-dark"
-  (ThemeProvider adds/removes this class.)
-*/
-:root.theme-dark {
-  --background: #020617;
-  --foreground: #e5e7eb;
-
-  --accent: #2563eb;
-  --accent-foreground: #f9fafb;
-
-  --border: #1f2933;
-  --muted: #020617;
-  --muted-foreground: #9ca3af;
-}
+@import './daisy-ui-themes.css';
 
 @import './custom-css.css';
-
-.markdown h1 {
-  @apply text-3xl font-mono font-light uppercase;
-}
-
-.markdown p {
-  @apply font-mono text-red-300;
-}
